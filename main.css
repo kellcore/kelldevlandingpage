@@ -1,6 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body,
 html {
     height: 100%;
+    /* font-family: "Didact Gothic", sans-serif; */
+    font-family: "DotGothic16", Arial, Helvetica, sans-serif;
+    color: #209456;
+    text-decoration: none;
+    line-height: 1.6;
+    font-size: 17px;
 }
 
 .bg {
@@ -37,14 +48,90 @@ html {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    color: lavenderblush;
-    font-family: "Didact Gothic", sans-serif;
-    font-family: "DotGothic16", sans-serif;
+    text-align: center;
 }
 
-/* .textBox {
-    background-color: #040e05;
-    border-radius: 50%;
-    height: 25vh;
-    width: 25%;
-} */
+header {
+    background-color: black;
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+
+img {
+    height: 480px;
+    width: auto;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero h4 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.hero h6 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+#projects {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#projects div {
+    padding: 20px;
+}
+
+#socialMedia {
+    background-color: black;
+    border: none;
+}
+
+.project1,
+.project2,
+.project3 {
+    border: medium dashed #209456;
+}
+
+@media (max-width: 500px) {
+    header {
+        margin-top: 20px;
+        padding: 25px;
+    }
+    img {
+        height: 240px;
+        width: 180px;
+    }
+    .hero h1 {
+        font-size: x-large;
+    }
+    .hero h2 {
+        font-size: larger;
+    }
+    .hero h4 {
+        font-size: large;
+    }
+    .hero h6 {
+        font-size: medium;
+    }
+    .hero p {
+        font-size: small;
+    }
+    #projects {
+        flex-direction: column;
+    }
+}
