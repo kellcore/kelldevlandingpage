@@ -6,7 +6,6 @@
 body,
 html {
     height: 100%;
-    /* font-family: "Didact Gothic", sans-serif; */
     font-family: "DotGothic16", Arial, Helvetica, sans-serif;
     color: #209456;
     text-decoration: none;
@@ -64,6 +63,7 @@ header {
 img {
     height: 480px;
     width: auto;
+    border: solid #209456;
 }
 
 .hero h2 {
@@ -85,6 +85,10 @@ img {
     font-size: 20px;
 }
 
+section {
+    background-color: black;
+}
+
 #projects {
     background-color: black;
     display: flex;
@@ -99,17 +103,31 @@ img {
 #socialMedia {
     background-color: black;
     border: none;
+    padding: 20px;
 }
 
 .project1,
 .project2,
 .project3 {
     border: medium dashed #209456;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: #209456;
+    font-size: 25px;
+}
+
+a:hover {
+    color: whitesmoke;
+    font-size: 30px;
 }
 
 @media (max-width: 500px) {
     header {
-        margin-top: 20px;
+        margin-top: 200px;
         padding: 25px;
     }
     img {
@@ -133,5 +151,11 @@ img {
     }
     #projects {
         flex-direction: column;
+    }
+    a {
+        font-size: medium;
+    }
+    a:hover {
+        color: whitesmoke;
     }
 }
